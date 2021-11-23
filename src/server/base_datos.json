@@ -1,4 +1,21 @@
 {
     "usuarios":[],
-    "mascotas":[]
+    "mascotas":[
+        {
+            "id":1,
+            "foto_perfil":"https://upload.wikimedia.org/wikipedia/commons/b/b9/French_poodle_.jpg",
+            "nombre":"Mario",
+            "especie":"perro",
+            "raza":"Puddle",
+            "fecha":"12-04-2021"
+        },
+        {
+            "id":2,
+            "foto_perfil":"https://www.muyinteresante.com.mx/wp-content/uploads/2018/05/httpstved-prod.adobecqms.netcontentdamtbgmexicomuyinteresantemxcuriosidadestop171225perro.imgo_.jpg",
+            "nombre":"Juan",
+            "especie":"perro",
+            "raza":"Perro",
+            "fecha":"12-04-2021"
+        }
+    ]
 }
