@@ -1,11 +1,92 @@
 
-.contenido {
+.contenido{
+    // --ion-background-color:red; 
+    border: 1px solid #BDBDBD;
+    height: 100%;
+    border-radius: 7px;
+    // --ion-background-color:#red;
+    
+}
+.gridPrincipal{
+    padding-top: 0;
+    height: 95%;
+    width: 95%;
+    
+    ion-row{
+        height: 100%;
+    }
 }
 
-ion-card{
-    --ion-background-color:red; 
-    border: 1px solid black;
-    height: 100%;
-    // --ion-background-color:#red;
+ion-title{
+    padding: 0;
+}
 
+.filaUno {
+    padding-bottom: 0;
+}
+.filaUno ion-col{
+    display: flex;
+    
+}
+
+.filaDos ion-col{
+    padding-top: 0;
+}
+
+.subtitulo{
+    // height: 10px;
+    padding-bottom: 0;
+}
+
+.datoMascota{
+    
+    margin-left: 0 !important;
+}
+
+.datoMascota div{
+    // text-decoration: underline;
+    border-bottom: 1px solid #CACACA;
+    width: 100%;
+}
+
+.datoMascota div p {
+    margin-bottom: 0;
+    color: #767676;
+}
+
+.filaTres ion-col{
+    // display: flex;
+    // flex-flow: column wrap;
+    display: grid;
+}
+
+.filaTres ion-col a{
+    text-decoration: underline;
+    margin: 5px 0;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    font-size: 16px;
+}
+
+// .filaCuatro ion-col ion-button{
+//     --ion-background-color: red;
+//     background: red;
+//     --ion-color-btn: #21BEF0;
+// }
+
+.filaCuatro ion-col{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    --background: #21BEF0;
 }
