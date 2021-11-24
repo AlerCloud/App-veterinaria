@@ -1,10 +1,23 @@
-import { Component } from '@angular/core';
+import { ArrayType } from '@angular/compiler';
+import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
 })
-export class AppComponent {
-  constructor() {}
+export class AppComponent implements OnInit {
+  
+
+
+  constructor() {
+
+  }
+  ngOnInit(): void{
+    
+  }
+
+ 
 }
+

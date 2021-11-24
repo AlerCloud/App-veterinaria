@@ -1,0 +1,62 @@
+<ion-content  >
+  <ion-toolbar color="secondary" > 
+    <h1 align="center">Mis Mascotas</h1>
+  </ion-toolbar>
+
+
+
+  <ion-grid  >
+    <ion-row  > 
+    <ion-col >
+      
+        <ion-card  >
+          
+            <ion-item *ngFor="let mascota of mascotas">
+              <ion-avatar slot="start" > 
+              <img src=" {{mascota.foto_perfil}} " >
+            </ion-avatar>
+              <ion-label align= "center">
+                <h1  >{{mascota.nombre}} </h1>
+                <h2> Especie: {{mascota.especie}} </h2>
+                <h2> Raza: {{mascota.raza}} </h2>
+                <h2> Fecha:  {{mascota.fecha}} </h2>
+              </ion-label>
+              
+            </ion-item> 
+
+         
+          
+      </ion-card>
+     
+    </ion-col>
+  </ion-row>
+  </ion-grid>
+  <ion-grid  >
+    <ion-row class="centrado"  > 
+    <ion-col >
+      
+       <ion-button color="secondary" href="agregar"> <ion-icon name="add-outline" >  </ion-icon> </ion-button>
+     
+    </ion-col>
+  </ion-row>
+  </ion-grid>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ion-content>

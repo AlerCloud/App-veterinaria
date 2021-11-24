@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { AgregarMascotaComponent } from './agregar-mascota/agregar-mascota.component';
 import { LoginComponent } from './login/login.component';
+import { MainComponent } from './main/main.component';
 import { RegistroComponent } from './registro/registro.component';
 
 const routes: Routes = [
@@ -13,6 +15,14 @@ const routes: Routes = [
     path:'registro',
     component: RegistroComponent
 
+  },
+  {
+    path:'main',
+    component: MainComponent
+  },
+  {
+    path:'agregar',
+    component: AgregarMascotaComponent
   },
   {
     path: 'home',
