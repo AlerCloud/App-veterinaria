@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
 import { MascotasComponent } from './mascotas/mascotas.component';
 import { RegistroComponent } from './registro/registro.component';
+import { VerDesparacitacionesComponent } from './ver-desparacitaciones/ver-desparacitaciones.component';
 import { VerFichaComponent } from './ver-ficha/ver-ficha.component';
 
 const routes: Routes = [
@@ -35,6 +36,11 @@ const routes: Routes = [
   {
     path: 'agregarMascota',
     component: MascotasComponent
+
+  },
+  {
+    path: 'verDesparacitaciones',
+    component: VerDesparacitacionesComponent
 
   },
   // {

@@ -15,6 +15,7 @@ import { VerFichaComponent } from './ver-ficha/ver-ficha.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { MascotaService } from './services/mascota.service';
 import { MascotasComponent } from './mascotas/mascotas.component';
+import { VerDesparacitacionesComponent } from './ver-desparacitaciones/ver-desparacitaciones.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MascotasComponent } from './mascotas/mascotas.component';
     AppComponent,
     VerFichaComponent,
     HeaderComponent,
-    MascotasComponent
+    MascotasComponent,
+    VerDesparacitacionesComponent
   ],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule, ReactiveFormsModule, HttpClientModule],

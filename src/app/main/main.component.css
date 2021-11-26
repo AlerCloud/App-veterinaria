@@ -2,14 +2,6 @@
   text-align: center;
 }
 
-
-.contenido {
-  border: 1px solid #BDBDBD;
-  height: 100%;
-  border-radius: 7px;
-  
-}
-
 .filaCartas{
   display: flex;
   justify-content: space-around;
