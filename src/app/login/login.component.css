@@ -46,3 +46,9 @@
     left: 50%;
    
 }
+
+ion-header{
+
+    --ion-background-color: #21BEF0;
+}
+

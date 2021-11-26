@@ -1,62 +1,112 @@
-<ion-content  >
-  <ion-toolbar color="secondary" > 
-    <h1 align="center">Mis Mascotas</h1>
-  </ion-toolbar>
+<app-header titulo="Mis Mascotas"></app-header>
 
+<ion-content>
+  <ion-grid class="gridPrincipal">
+    <ion-row>
+      <ion-col>
 
-
-  <ion-grid  >
-    <ion-row  > 
-    <ion-col >
-      
-        <ion-card  >
-          
-            <ion-item *ngFor="let mascota of mascotas">
-              <ion-avatar slot="start" > 
-              <img src=" {{mascota.foto_perfil}} " >
-            </ion-avatar>
-              <ion-label align= "center">
-                <h1  >{{mascota.nombre}} </h1>
-                <h2> Especie: {{mascota.especie}} </h2>
-                <h2> Raza: {{mascota.raza}} </h2>
-                <h2> Fecha:  {{mascota.fecha}} </h2>
-              </ion-label>
+        <div class="contenido">
+          <!-- <ion-grid>
+            <ion-row>
+            <ion-col>
               
-            </ion-item> 
+              <ion-card>
+                
+                <ion-item *ngFor="let mascota of mascotas">
+                  <ion-avatar slot="start">
+                    <img src=" {{mascota.foto_perfil}} ">
+                  </ion-avatar>
+                  <ion-label align="center">
+                    <h1>{{mascota.nombre}} </h1>
+                    <h2> Especie: {{mascota.especie}} </h2>
+                    <h2> Raza: {{mascota.raza}} </h2>
+                    <h2> Fecha: {{mascota.fecha}} </h2>
+                  </ion-label>
+                  
+                </ion-item>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <ion-grid>
 
-         
+          <ion-row class="centrado">
+            <ion-col>
+              
+              <ion-button color="secondary" href="agregar">
+                <ion-icon name="add-outline"> </ion-icon>
+              </ion-button>
+              
+            </ion-col>
+          </ion-row>
+        </ion-grid> -->
+
+        
+        <ion-grid *ngIf="mascotas.length != 0">
           
-      </ion-card>
-     
-    </ion-col>
-  </ion-row>
+          <ion-row class="filaCartas">
+            <ion-col size="6" *ngFor="let item of mascotas">
+              <ion-card class="cartaMascota" (click)="verFicha()">
+                <ion-card-header>
+                  <ion-img src="https://www.muyinteresante.com.mx/wp-content/uploads/2018/05/httpstved-prod.adobecqms.netcontentdamtbgmexicomuyinteresantemxcuriosidadestop171225perro.imgo_.jpg"></ion-img>
+                </ion-card-header>
+                <ion-card-content>
+                  Nombre de la mascota
+                </ion-card-content>
+              </ion-card>
+
+            </ion-col>
+            <ion-col size="6">
+              <ion-card class="cartaMascota cartaAgregar" (click)="verFicha()">
+                <ion-buttons>
+                  <ion-button (click)="irA('agregar')">
+                    <ion-icon name="add-outline"></ion-icon>
+                    
+                  </ion-button>
+                </ion-buttons>
+              </ion-card>
+
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <ion-grid id="noMascota" *ngIf="mascotas.length == 0">
+          <ion-row>
+            <ion-col class="centrarNoMascota" size="12">
+              <ion-text>
+                <h4>No tienes mascotas agregadas.</h4>
+              </ion-text>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="centrarNoMascota" size="12">
+              <ion-text>
+                <h6>¿Desea agregar una mascota nueva?</h6>
+              </ion-text>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12">
+              <ion-card class="cartaMascota cartaAgregar" (click)="verFicha()">
+                <ion-buttons>
+                  <ion-button (click)="irA('agregar')">
+                    <ion-icon name="add-outline"></ion-icon>
+                  </ion-button>
+                </ion-buttons>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="contenedorBtn" size="12">
+              <ion-button class="btnAgregar" (click)="onClick()" shape="round">
+                Agregar
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+        </div>
+
+      </ion-col>
+    </ion-row>
   </ion-grid>
-  <ion-grid  >
-    <ion-row class="centrado"  > 
-    <ion-col >
-      
-       <ion-button color="secondary" href="agregar"> <ion-icon name="add-outline" >  </ion-icon> </ion-button>
-     
-    </ion-col>
-  </ion-row>
-  </ion-grid>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </ion-content>

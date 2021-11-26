@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import { IMascota } from 'src/interfaces/IMascota';
 import { RestService } from '../rest.service';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-main',
@@ -22,8 +23,8 @@ export class MainComponent implements OnInit {
 
   mascotas: any = [];
   private servicio: RestService
-  constructor(
-    private http: HttpClient, datoServicio: RestService) { }
+
+  constructor(private http: HttpClient, datoServicio: RestService, private navCtr:NavController) { }
 
     public agregarDato(){
       console.log(this.dato);
@@ -39,7 +40,17 @@ export class MainComponent implements OnInit {
     this.getmascota().subscribe(res=>{
       console.log("Res",res)
       this.mascotas = res;
+      console.log(this.mascotas);
+      
     });
+  }
+
+  public verFicha(){
+    this.navCtr.navigateForward("ficha");
+  }
+
+  public irA(direccion:string){
+    this.navCtr.navigateForward(direccion);
   }
 
   getmascota(){

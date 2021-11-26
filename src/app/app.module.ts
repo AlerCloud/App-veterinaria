@@ -14,6 +14,7 @@ import { AgregarMascotaComponent } from './agregar-mascota/agregar-mascota.compo
 import { VerFichaComponent } from './ver-ficha/ver-ficha.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { MascotaService } from './services/mascota.service';
+import { MascotasComponent } from './mascotas/mascotas.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,9 @@ import { MascotaService } from './services/mascota.service';
     AgregarMascotaComponent,
     AppComponent,
     VerFichaComponent,
-    HeaderComponent ],
+    HeaderComponent,
+    MascotasComponent
+  ],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule, ReactiveFormsModule, HttpClientModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, MascotaService],

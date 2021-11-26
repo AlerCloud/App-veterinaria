@@ -1,3 +1,79 @@
-.centrado{
-    text-align: center;
-  }
+.centrado {
+  text-align: center;
+}
+
+
+.contenido {
+  border: 1px solid #BDBDBD;
+  height: 100%;
+  border-radius: 7px;
+  
+}
+
+.filaCartas{
+  display: flex;
+  justify-content: space-around;
+}
+.cartaMascota {
+  margin: 10px auto;
+  border: 1px solid #000;
+  width: 139px;
+  height: 163px;
+}
+
+.cartaMascota ion-card-header{
+  padding: 0;
+}
+.cartaMascota ion-card-header ion-img{
+  width: 93px;
+  height: 94.18px;
+  margin: auto;
+  /* border-radius: 5px; */
+}
+
+.cartaMascota ion-card-content{
+  text-align: center;
+  color: #000;
+}
+
+.cartaAgregar {
+  background-color: #F4F4F4;
+}
+
+.cartaAgregar ion-buttons {
+  height: 100%;
+}
+
+.cartaAgregar ion-buttons ion-button {
+  margin: auto;
+}
+
+.cartaAgregar ion-buttons ion-button ion-icon {
+font-size: 43px;
+}
+
+#noMascota {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  /* height: 100%; */
+}
+
+#noMascota ion-row {
+  min-width: 100%;
+}
+
+.centrarNoMascota ion-text h6,
+.centrarNoMascota ion-text h4{
+  text-align: center;
+}
+
+.contenedorBtn {
+  display: flex;
+  justify-content: center;
+}
+
+.btnAgregar {
+  --background: #21BEF0;
+  margin: auto;
+}

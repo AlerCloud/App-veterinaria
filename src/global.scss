@@ -24,3 +24,14 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+.gridPrincipal{
+    padding-top: 0;
+    height: 95%;
+    width: 95%;
+    
+    ion-row{
+        height: 100%;
+    }
+}
