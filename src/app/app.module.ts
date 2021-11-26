@@ -11,9 +11,19 @@ import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
 import { AgregarMascotaComponent } from './agregar-mascota/agregar-mascota.component';
 import { FormsModule } from '@angular/forms';
+import { VerFichaComponent } from './ver-ficha/ver-ficha.component';
+import { HeaderComponent } from './componentes/header/header.component';
 
 @NgModule({
-  declarations: [AppComponent,MainComponent,LoginComponent,RegistroComponent,AgregarMascotaComponent ],
+  declarations: [
+    AppComponent,
+    MainComponent,
+    LoginComponent,
+    RegistroComponent,
+    AgregarMascotaComponent,
+    AppComponent,
+    VerFichaComponent,
+    HeaderComponent ],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule,FormsModule ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],

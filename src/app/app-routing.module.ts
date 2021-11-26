@@ -4,6 +4,7 @@ import { AgregarMascotaComponent } from './agregar-mascota/agregar-mascota.compo
 import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
 import { RegistroComponent } from './registro/registro.component';
+import { VerFichaComponent } from './ver-ficha/ver-ficha.component';
 
 const routes: Routes = [
 
@@ -23,12 +24,17 @@ const routes: Routes = [
   {
     path:'agregar',
     component: AgregarMascotaComponent
+    
+  },
+  {
+    path:'ficha',
+    component: VerFichaComponent
+
   },
   {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
- 
 ];
 
 @NgModule({

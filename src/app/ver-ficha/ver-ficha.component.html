@@ -1,0 +1,145 @@
+<app-header></app-header>
+
+<ion-content>
+  <ion-grid class="gridPrincipal">
+    <ion-row>
+      <ion-col>
+
+        <div class="contenido">
+          <ion-grid>
+            <div>
+            <!-- Cabecera de la carta -->
+            <ion-row class="ion-padding filaUno">
+              <ion-col size="3">
+                <ion-avatar>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/French_poodle_.jpg" />
+                </ion-avatar>
+              </ion-col>
+
+              <ion-col size="9">
+                <ion-title>Ficha Clínica</ion-title>
+              </ion-col>
+            </ion-row>
+            <!-- Fin cabecera de la carta -->
+
+            <!-- Datos de la mascota y su dueño -->
+            <ion-row class="filaDos">
+              <ion-col size="12">
+
+                <!-- Datos de la mascota -->
+                <ion-grid>
+                  <ion-row>
+                    <ion-col size="12" class="subtitulo">
+                      <ion-text>
+                        <h5>Mascota:</h5>
+                      </ion-text>
+                    </ion-col>
+                  </ion-row>
+
+                  <ion-row>
+                    <ion-col size="6" class="datoMascota">
+                      <div>
+
+                        <p>Nombre</p>
+                      </div>
+                    </ion-col>
+                    <ion-col size="6" class="datoMascota">
+                      <div>
+
+                        <p>Sexo</p>
+                      </div>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                    <ion-col size="6" class="datoMascota">
+                      <div>
+
+                        <p>Especie</p>
+                      </div>
+                    </ion-col>
+                    <ion-col size="6" class="datoMascota">
+                      <div>
+
+                        <p>Raza</p>
+                      </div>
+                    </ion-col>
+                  </ion-row>
+
+                </ion-grid>
+
+                <!-- Fin datos de la mascota -->
+
+                <!-- Datos del dueño -->
+                <ion-grid>
+                  <ion-row>
+                    <ion-col size="12" class="subtitulo">
+                      <ion-text>
+                        <h5>Dueño:</h5>
+                      </ion-text>
+                    </ion-col>
+                  </ion-row>
+
+                  <ion-row>
+                    <ion-col size="6" class="datoMascota">
+                      <div>
+
+                        <p>Camilo Uribe Jara</p>
+                      </div>
+                    </ion-col>
+                    <ion-col size="6" class="datoMascota">
+                      <div>
+
+                        <p>Numero de telefono</p>
+                      </div>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                    <ion-col size="11" class="datoMascota">
+                      <div>
+
+                        <p>Correo</p>
+                      </div>
+                    </ion-col>
+                  </ion-row>
+
+                </ion-grid>
+                <!-- Fin datos del dueño -->
+
+              </ion-col>
+            </ion-row>
+
+            <!-- Fin datos de la mascota y su dueño -->
+
+            <!-- Links de las fichas -->
+            <ion-row class="filaTres">
+              <ion-col size="12">
+                <ul>
+                  <li>
+                    <a href="">Desparacitación</a>
+                  </li>
+                  <li>
+
+                    <a href="">Vacunas</a>
+                  </li>
+                  <li>
+                    <a href="">Operaciones</a>
+                  </li>
+                </ul>
+              </ion-col>
+            </ion-row>
+            <!-- Fin links de las fichas -->
+          </div>
+          <ion-row class="filaCuatro">
+            <ion-col size="12">
+              <ion-button class="btn" (click)="onClick()" shape="round">
+                Volver
+              </ion-button>
+            </ion-col>
+          </ion-row>
+          </ion-grid>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
