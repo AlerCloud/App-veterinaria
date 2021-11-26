@@ -3,6 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { AgregarMascotaComponent } from './agregar-mascota/agregar-mascota.component';
 import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
+import { MascotasComponent } from './mascotas/mascotas.component';
 import { RegistroComponent } from './registro/registro.component';
 import { VerFichaComponent } from './ver-ficha/ver-ficha.component';
 
@@ -13,7 +14,7 @@ const routes: Routes = [
     component: LoginComponent
   },
   {
-    path:'registro',
+    path: 'registro',
     component: RegistroComponent
 
   },
@@ -32,9 +33,15 @@ const routes: Routes = [
 
   },
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path: 'agregarMascota',
+    component: MascotasComponent
+
   },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
+  },
+
 ];
 
 @NgModule({

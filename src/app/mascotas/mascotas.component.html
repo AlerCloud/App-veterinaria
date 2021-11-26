@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registrar Mascota</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="text-center">
+          <h1>Registro</h1>
+          <h4>Por favor ingresa tus datos.</h4>
+        </div>
+        <ion-item color="transparent">
+          <ion-label position="floating">Nombre</ion-label>
+          <ion-input [(ngModel)]="client.name" type="text" required></ion-input>
+        </ion-item>
+        <ion-item color="transparent">
+          <ion-label position="floating">Nro. de Chip</ion-label>
+          <ion-input [(ngModel)]="chip" type="text"></ion-input>
+        </ion-item>
+        <ion-item color="transparent">
+          <ion-label position="floating">Especie</ion-label>
+          <ion-input [(ngModel)]="type" type="text" required></ion-input>
+        </ion-item>
+        <ion-item color="transparent">
+          <ion-label position="floating">Raza</ion-label>
+          <ion-input [(ngModel)]="breed" type="text" required></ion-input>
+        </ion-item>
+        <ion-item color="transparent">
+          <ion-label position="floating">Fecha Ultimo Control</ion-label>
+          <ion-input [(ngModel)]="last" type="text"></ion-input>
+        </ion-item>
+        <ion-button class="ion-margin-top" type="submit" expand="block" color="light" (click)="sendSubmit()"
+          color="warning">Registrar Mascota</ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>
