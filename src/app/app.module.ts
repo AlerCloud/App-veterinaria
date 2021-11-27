@@ -21,6 +21,7 @@ import { CommonModule } from '@angular/common';
 import { TratamientoComponent } from './tratamiento/tratamiento.component';
 import { TratamientoPipe } from './pipes/tratamiento.pipe';
 import { VerVacunasComponent } from './pages/ver-vacunas/ver-vacunas.component';
+import { VerOperacionesComponent } from './pages/ver-operaciones/ver-operaciones.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { VerVacunasComponent } from './pages/ver-vacunas/ver-vacunas.component';
     VerDesparacitacionesComponent,
     TratamientoComponent,
     VerVacunasComponent,
+    VerOperacionesComponent,
     TratamientoPipe
   ],
   entryComponents: [],

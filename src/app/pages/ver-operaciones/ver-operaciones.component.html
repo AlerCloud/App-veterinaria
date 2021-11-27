@@ -1,0 +1,33 @@
+<app-header titulo="Mis Operaciones"></app-header>
+
+<ion-content>
+  <ion-grid class="gridPrincipal">
+    <ion-row>
+      <ion-col>
+        <div class="contenido">
+          <ion-list lines=none *ngIf="tratamientos.length != 0">
+            <ion-item *ngFor="let item of tratamientos|tratamiento:idMascota:'Operación'">
+              <section>
+                <article>{{item.nombre}}</article>
+                <article>{{item.fecha}}</article>
+              </section>
+            </ion-item>
+            <!-- <ion-item>
+              <section>
+                <article>texto</article>
+                <article>fecha</article>
+              </section>
+            </ion-item> -->
+          </ion-list>
+          <ion-grid *ngIf="tratamientos.length == 0">
+            <ion-row>
+              <ion-col size="12">
+                <h3>No hay Operaciones</h3>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

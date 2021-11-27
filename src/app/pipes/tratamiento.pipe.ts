@@ -18,9 +18,10 @@ export class TratamientoPipe implements PipeTransform {
         respuesta.push(tratamientos[i])
         
       }
+      console.log(idMascota);
       
     }
-    // console.log(respuesta);
+    console.log(respuesta);
     
     return respuesta;
   }

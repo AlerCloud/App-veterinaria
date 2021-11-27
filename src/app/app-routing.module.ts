@@ -9,6 +9,7 @@ import { VerDesparacitacionesComponent } from './ver-desparacitaciones/ver-despa
 import { VerFichaComponent } from './ver-ficha/ver-ficha.component';
 import { TratamientoComponent } from './tratamiento/tratamiento.component';
 import { VerVacunasComponent } from './pages/ver-vacunas/ver-vacunas.component';
+import { VerOperacionesComponent } from './pages/ver-operaciones/ver-operaciones.component';
 
 const routes: Routes = [
 
@@ -56,6 +57,10 @@ const routes: Routes = [
     {
       path:'verVacunas/:id',
       component:VerVacunasComponent
+    },
+    {
+      path:'verOperaciones/:id',
+      component:VerOperacionesComponent
     }
 
  
