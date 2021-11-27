@@ -20,6 +20,7 @@ import { TratamientoService } from './services/Tratamiento.service';
 import { CommonModule } from '@angular/common';
 import { TratamientoComponent } from './tratamiento/tratamiento.component';
 import { TratamientoPipe } from './pipes/tratamiento.pipe';
+import { VerVacunasComponent } from './pages/ver-vacunas/ver-vacunas.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { TratamientoPipe } from './pipes/tratamiento.pipe';
     MascotasComponent,
     VerDesparacitacionesComponent,
     TratamientoComponent,
+    VerVacunasComponent,
     TratamientoPipe
   ],
   entryComponents: [],

@@ -8,6 +8,7 @@ import { RegistroComponent } from './registro/registro.component';
 import { VerDesparacitacionesComponent } from './ver-desparacitaciones/ver-desparacitaciones.component';
 import { VerFichaComponent } from './ver-ficha/ver-ficha.component';
 import { TratamientoComponent } from './tratamiento/tratamiento.component';
+import { VerVacunasComponent } from './pages/ver-vacunas/ver-vacunas.component';
 
 const routes: Routes = [
 
@@ -39,19 +40,24 @@ const routes: Routes = [
     component: MascotasComponent
 
   },
-  {
-    path: 'verDesparacitaciones/:id',
-    component: VerDesparacitacionesComponent
-
-  },
   // {
-  //   path: 'home',
-  //   loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
-  // },
-  {
-    path: 'tratamiento/:id',
-    component: TratamientoComponent
-  }
+    //   path: 'home',
+    //   loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
+    // },
+    {
+      path: 'tratamiento/:id',
+      component: TratamientoComponent
+    },
+    {
+      path: 'verDesparacitaciones/:id',
+      component: VerDesparacitacionesComponent
+  
+    },
+    {
+      path:'verVacunas/:id',
+      component:VerVacunasComponent
+    }
+
  
 ];
 
