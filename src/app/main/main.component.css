@@ -69,3 +69,7 @@ font-size: 43px;
   --background: #21BEF0;
   margin: auto;
 }
+
+ion-avatar{ 
+  width: 100px !important; 
+  height : 100px !important;}

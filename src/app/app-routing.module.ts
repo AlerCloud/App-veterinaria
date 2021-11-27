@@ -7,6 +7,7 @@ import { MascotasComponent } from './mascotas/mascotas.component';
 import { RegistroComponent } from './registro/registro.component';
 import { VerDesparacitacionesComponent } from './ver-desparacitaciones/ver-desparacitaciones.component';
 import { VerFichaComponent } from './ver-ficha/ver-ficha.component';
+import { TratamientoComponent } from './tratamiento/tratamiento.component';
 
 const routes: Routes = [
 
@@ -47,7 +48,11 @@ const routes: Routes = [
   //   path: 'home',
   //   loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   // },
-
+  {
+    path: 'tratamiento',
+    component: TratamientoComponent
+  }
+ 
 ];
 
 @NgModule({

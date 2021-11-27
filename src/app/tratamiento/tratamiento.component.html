@@ -1,0 +1,99 @@
+<!-- HEADER -->
+
+<ion-header>
+    <ion-toolbar color="secondary">
+        <ion-buttons slot="start">
+            <ion-menu-button color="dark"></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Tratamiento</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<!--FORMULARIO-->
+
+<br><br><br><br><br><br>
+
+
+<ion-content [fullscreen]="true">
+    <ion-grid class="FS">
+        <ion-row class="FS ion-align-items-center">
+            <ion-col size="10" offset="1">
+                <ion-card>
+                    <ion-card-header>
+                        <ion-card-title class="ion-text-center">Crear Tratamiento</ion-card-title>
+                    </ion-card-header>
+
+                    <ion-card-content>
+                        <ion-grid>
+
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label position="floating" class="ion-text-center"> Tipo de Tratamiento
+                                        </ion-label>
+                                        <ion-input type="text" [(ngModel)]="tratamiento.tipoTratamiento"></ion-input>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label position="floating" class="ion-text-center"> Vacuna </ion-label>
+                                        <ion-input type="text" [(ngModel)]="tratamiento.vacuna"></ion-input>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label position="floating" class="ion-text-center"> Antiparasitario
+                                        </ion-label>
+                                        <ion-input type="text" [(ngModel)]="tratamiento.antiparasitario"></ion-input>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label position="floating" class="ion-text-center"> Fecha del tratamiento
+                                        </ion-label>
+                                        <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="tratamiento.fecha">
+                                        </ion-datetime>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label position="floating" class="ion-text-center"> Descripción
+                                        </ion-label>
+                                        <ion-textarea rows="6" cols="20" placeholder="Póngale"></ion-textarea>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+
+                            <ion-row>
+                                <ion-col>
+                                    <ion-button expand="block" color="secondary" href="">Volver
+                                    </ion-button>
+                                </ion-col>
+
+                                <ion-col>
+                                    <ion-button expand="block" color="secondary" (click)="ingresarTratamiento ()">Finalizar
+                                    </ion-button>
+                                </ion-col>
+
+                            </ion-row>
+
+
+                        </ion-grid>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
