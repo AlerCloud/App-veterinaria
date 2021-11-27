@@ -23,8 +23,12 @@ export class VerFichaComponent implements OnInit {
     });
   }
 
+  public volverInicio(){
+    this.navCtr.navigateForward('main')
+  }
+
   /**
-   * irA
+   * ir a la pagina de tratamiento
    */
   public irTratamiento() {
     this.navCtr.navigateForward("tratamiento/"+this.mascota.id)

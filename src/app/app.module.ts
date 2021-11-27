@@ -34,8 +34,8 @@ import { VerOperacionesComponent } from './pages/ver-operaciones/ver-operaciones
     VerFichaComponent,
     HeaderComponent,
     MascotasComponent,
-    VerDesparacitacionesComponent,
     TratamientoComponent,
+    VerDesparacitacionesComponent,
     VerVacunasComponent,
     VerOperacionesComponent,
     TratamientoPipe

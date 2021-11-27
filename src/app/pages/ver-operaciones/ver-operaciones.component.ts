@@ -7,6 +7,7 @@ import pdfMake from 'pdfmake/build/pdfmake';
 import pdfFonts from 'pdfmake/build/vfs_fonts';
 import { MascotaService } from 'src/app/services/mascota.service';
 import { IMascota } from 'src/interfaces/IMascota';
+import { NavController } from '@ionic/angular';
 pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
 
@@ -22,12 +23,16 @@ export class VerOperacionesComponent implements OnInit {
   private mascota: IMascota = { especie: "", fecha: Date(), foto_perfil: "", nombre: "", raza: "", id: 0 }
 
 
-  constructor(private servicio: TratamientoService, private parametroUrl: ActivatedRoute, private servicioMascota: MascotaService) { }
+  constructor(private servicio: TratamientoService, private parametroUrl: ActivatedRoute, private servicioMascota: MascotaService, private navCtr:NavController) { }
 
   ngOnInit() {
     this.servicio.traerTratamientos().subscribe(data => { this.tratamientos = data })
     this.idMascota = parseInt(this.parametroUrl.snapshot.paramMap.get("id"))
     this.servicioMascota.getMascota(this.idMascota).subscribe(data => { this.mascota = data })
+  }
+
+  public volver(){
+    this.navCtr.back();
   }
 
   public pdf() {

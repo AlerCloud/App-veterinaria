@@ -8,6 +8,7 @@ import { MascotaService } from '../services/mascota.service';
 
 import pdfMake from 'pdfmake/build/pdfmake';
 import pdfFonts from 'pdfmake/build/vfs_fonts';
+import { NavController } from '@ionic/angular';
 pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
 @Component({
@@ -22,7 +23,7 @@ export class VerDesparacitacionesComponent implements OnInit {
 
   private mascota: IMascota = { especie: "", fecha: Date(), foto_perfil: "", nombre: "", raza: "", id: 0 }
 
-  constructor(private servicio: TratamientoService, private parametroUrl: ActivatedRoute, private servicioMascota: MascotaService) { }
+  constructor(private servicio: TratamientoService, private parametroUrl: ActivatedRoute, private servicioMascota: MascotaService, private nacCtr:NavController) { }
 
   ngOnInit() {
     this.servicio.traerTratamientos().subscribe(data => { this.tratamientos = data })
@@ -90,4 +91,7 @@ export class VerDesparacitacionesComponent implements OnInit {
     pdf.download();
   }
 
+  public irA(ruta?:string){
+    this.nacCtr.back();
+  }
 }
