@@ -30,7 +30,7 @@ const routes: Routes = [
     
   },
   {
-    path:'ficha',
+    path:'ficha/:id',
     component: VerFichaComponent
 
   },
@@ -49,7 +49,7 @@ const routes: Routes = [
   //   loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   // },
   {
-    path: 'tratamiento',
+    path: 'tratamiento/:id',
     component: TratamientoComponent
   }
  

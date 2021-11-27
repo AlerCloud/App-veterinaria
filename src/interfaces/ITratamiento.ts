@@ -1,6 +1,10 @@
+export type tratamiento = "Desparasitante" | "Operación" | "Vacuna" | "Ninguno"
+
 export interface ITratamiento{
-    tipoTratamiento: string;
+    nombre:string,
+    tipoTratamiento: tratamiento;
     vacuna: string;
     antiparasitario: string;
     fecha: Date;
+    idMascota:number
 }

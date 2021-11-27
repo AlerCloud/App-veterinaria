@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ITratamiento } from '../../interfaces/ITratamiento';
+import { ITratamiento, tratamiento } from '../../interfaces/ITratamiento';
 import { TratamientoService } from '../../services/Tratamiento.service';
 
 @Component({
@@ -8,11 +8,13 @@ import { TratamientoService } from '../../services/Tratamiento.service';
   styleUrls: ['./tratamiento.component.scss'],
 })
 export class TratamientoComponent {
-  public tratamiento: ITratamiento = {
-    tipoTratamiento: '',
+  public nuevoTratamiento: ITratamiento = {
+    nombre:"",
+    tipoTratamiento: 'Ninguno',
     vacuna: '',
     antiparasitario: '',
     fecha: new Date(),
+    idMascota:0
   }
 
   // private servicioTratamiento: TratamientoService

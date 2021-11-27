@@ -12,7 +12,7 @@
             <ion-row class="ion-padding filaUno">
               <ion-col size="3">
                 <ion-avatar>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/French_poodle_.jpg" />
+                  <img src="{{mascota.foto_perfil}}" />
                 </ion-avatar>
               </ion-col>
 
@@ -40,13 +40,13 @@
                     <ion-col size="6" class="datoMascota">
                       <div>
 
-                        <p>Nombre</p>
+                        <p>{{mascota.nombre}}</p>
                       </div>
                     </ion-col>
                     <ion-col size="6" class="datoMascota">
                       <div>
 
-                        <p>Sexo</p>
+                        <p>sexo</p>
                       </div>
                     </ion-col>
                   </ion-row>
@@ -54,13 +54,13 @@
                     <ion-col size="6" class="datoMascota">
                       <div>
 
-                        <p>Especie</p>
+                        <p>{{mascota.especie}}</p>
                       </div>
                     </ion-col>
                     <ion-col size="6" class="datoMascota">
                       <div>
 
-                        <p>Raza</p>
+                        <p>{{mascota.raza}}</p>
                       </div>
                     </ion-col>
                   </ion-row>
@@ -133,6 +133,9 @@
             <ion-col size="12">
               <ion-button class="btn" (click)="onClick()" shape="round">
                 Volver
+              </ion-button>
+              <ion-button class="btn" (click)="irTratamiento()" shape="round">
+                Tratamientos
               </ion-button>
             </ion-col>
           </ion-row>

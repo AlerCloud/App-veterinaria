@@ -12,7 +12,7 @@
               
               <ion-card>
                 
-                <ion-item *ngFor="let mascota of mascotas">
+                <ion-item *ngFor="let mascota of mascotas" (click)="verFicha(mascota.id)">
                   <ion-avatar slot="start">
                     <img src="{{mascota.foto_perfil}}">
                   </ion-avatar>

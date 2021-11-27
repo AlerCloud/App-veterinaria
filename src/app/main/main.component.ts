@@ -45,8 +45,8 @@ export class MainComponent implements OnInit {
     });
   }
 
-  public verFicha(){
-    this.navCtr.navigateForward("ficha");
+  public verFicha(id:number){
+    this.navCtr.navigateForward("ficha/"+id);
   }
 
   public irA(direccion:string){

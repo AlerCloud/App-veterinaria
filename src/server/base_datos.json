@@ -18,12 +18,84 @@
       "fecha": "12-04-2021"
     },
     {
-      "id": 3,
-      "foto_perfil": "https://www.muyinteresante.com.mx/wp-content/uploads/2018/05/httpstved-prod.adobecqms.netcontentdamtbgmexicomuyinteresantemxcuriosidadestop171225perro.imgo_.jpg",
-      "nombre": "Juan",
-      "especie": "perro",
-      "raza": "fox-terrier",
-      "fecha": "12-04-2021"
+      "foto_perfil": "https://static.nationalgeographic.es/files/styles/image_3200/public/75552.ngsversion.1422285553360.jpg",
+      "nombre": "Martin",
+      "especie": "Perro",
+      "raza": "Gato",
+      "fecha": "2021-11-12",
+      "id": 3
+    },
+    {
+      "foto_perfil": "https://static.nationalgeographic.es/files/styles/image_3200/public/75552.ngsversion.1422285553360.jpg",
+      "nombre": "sadsa",
+      "especie": "sadsad",
+      "raza": "sadsad",
+      "fecha": "2021-11-18",
+      "id": 4
+    },
+    {
+      "foto_perfil": "https://static.nationalgeographic.es/files/styles/image_3200/public/75552.ngsversion.1422285553360.jpg",
+      "nombre": "Otro",
+      "especie": "asdasd",
+      "raza": "asdsad",
+      "fecha": "2021-11-06",
+      "id": 5
     }
+  ],
+  "tratamiento":[],
+  "vacunas":[
+    {
+      "nombre":"moquillo canino"
+    },
+    {
+      "nombre":"parvovirosis"
+    },
+    {
+      "nombre":"leptospirosis"
+    },
+    {
+      "nombre":"rabia"
+    },
+    {
+      "nombre":"hepatitis infecciosa"
+    }
+  ],
+  "desparacitaciones":[
+    {
+      "nombre":"Ehliquantel"
+    },
+    {
+      "nombre":"Vetnil - Glicopan Pet"
+    },
+    {
+      "nombre":"Drag Pharma"
+    },
+    {
+      "nombre":"Invermic"
+    },
+    {
+      "nombre":"Mebermic"
+    }
+  ],
+
+  "operaciones":[
+    {
+      "nombre":"Ovariohisterectomia"
+    },
+    {
+      "nombre":"Caudotomías"
+    },
+    {
+      "nombre":"Destartraje con Ultrasonido"
+    },
+    {
+      "nombre":"Esplenectomía"
+    },
+    {
+      "nombre":"Otohematomas"
+    },
+    {
+      "nombre":"Orquiectomía u Orquidectomía"
+    },
   ]
 }

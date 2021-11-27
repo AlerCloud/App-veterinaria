@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
-import { IMascota } from '../services/imascota';
+// import { IMascota } from '../services/imascota';
 import { MascotaService } from '../services/mascota.service';
 
 @Component({
@@ -10,13 +10,13 @@ import { MascotaService } from '../services/mascota.service';
   styleUrls: ['./mascotas.component.scss'],
 })
 export class MascotasComponent implements OnInit {
-  public client: IMascota = {
-    name: '',
-    chip: '',
-    type: '',
-    breed: '',
-    last: '',
-  };
+  // public client: IMascota = {
+  //   name: '',
+  //   chip: '',
+  //   type: '',
+  //   breed: '',
+  //   last: '',
+  // };
 
   private clientService: MascotaService;
   constructor(
@@ -26,16 +26,17 @@ export class MascotasComponent implements OnInit {
   ) {
     this.clientService = service;
   }
-  sendSubmit() {
-    this.clientService.addClient(this.client).subscribe((response) => {
-      console.log(response);
-    });
-    this.alertCtrl.create({
-      header: 'Mascota Registrada Exitosamente',
-      message: 'Su mascota ha sido registrada',
-      buttons: ['OK'],
-    });
-  }
+
+  // sendSubmit() {
+  //   this.clientService.addClient(this.client).subscribe((response) => {
+  //     console.log(response);
+  //   });
+  //   this.alertCtrl.create({
+  //     header: 'Mascota Registrada Exitosamente',
+  //     message: 'Su mascota ha sido registrada',
+  //     buttons: ['OK'],
+  //   });
+  // }
   ngOnInit() { }
 
 }
