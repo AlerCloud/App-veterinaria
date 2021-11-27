@@ -28,41 +28,78 @@
 
                             <ion-row>
                                 <ion-col>
-                                    <ion-item>
+                                    <!-- <ion-item>
                                         <ion-label position="floating" class="ion-text-center"> Tipo de Tratamiento
                                         </ion-label>
                                         <ion-input type="text" [(ngModel)]="tratamiento.tipoTratamiento"></ion-input>
+                                    </ion-item> -->
+                                    <ion-item>
+                                        <ion-label position="floating">Tipo de tratamiento</ion-label>
+                                        <ion-select multiple="false" (ionChange)="seleccionarTratamiento($event)">
+                                            <ion-select-option value="vacuna">Vacuna</ion-select-option>
+                                            <ion-select-option value="operacion">Operación</ion-select-option>
+                                            <ion-select-option value="desparacitacion">Desparacitación
+                                            </ion-select-option>
+                                        </ion-select>
                                     </ion-item>
                                 </ion-col>
                             </ion-row>
 
                             <ion-row>
                                 <ion-col>
-                                    <ion-item>
+                                    <!-- <ion-item>
                                         <ion-label position="floating" class="ion-text-center"> Vacuna </ion-label>
                                         <ion-input type="text" [(ngModel)]="tratamiento.vacuna"></ion-input>
+                                    </ion-item> -->
+                                    <ion-item>
+                                        <ion-label position="floating">Vacunas</ion-label>
+                                        <ion-select (ionChange)="cambioNombre($event)" [disabled]="estadoVacuna" multiple="false">
+                                            <ion-select-option value="{{item.nombre}}" *ngFor="let item of vacunas">{{item.nombre}}</ion-select-option>
+                                        </ion-select>
                                     </ion-item>
                                 </ion-col>
                             </ion-row>
 
                             <ion-row>
                                 <ion-col>
-                                    <ion-item>
+                                    <!-- <ion-item>
                                         <ion-label position="floating" class="ion-text-center"> Antiparasitario
                                         </ion-label>
                                         <ion-input type="text" [(ngModel)]="tratamiento.antiparasitario"></ion-input>
+                                    </ion-item> -->
+                                    <ion-item>
+                                        <ion-label position="floating">Antiparasitarios</ion-label>
+                                        <ion-select (ionChange)="cambioNombre($event)"  [disabled]="estadoDesparacitante" multiple="false">
+                                            <ion-select-option value="{{item.nombre}}" *ngFor="let item of desparacitantes">{{item.nombre}}</ion-select-option>
+                                        </ion-select>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+
+                                <ion-col>
+                                    <!-- <ion-item>
+                                        <ion-label position="floating" class="ion-text-center"> Antiparasitario
+                                        </ion-label>
+                                        <ion-input type="text" [(ngModel)]="tratamiento.antiparasitario"></ion-input>
+                                    </ion-item> -->
+                                    <ion-item>
+                                        <ion-label position="floating">Operaciones</ion-label>
+                                        <ion-select (ionChange)="cambioNombre($event)"  [disabled]="estadoOperacion" multiple="false">
+                                            <ion-select-option value="{{item.nombre}}" *ngFor="let item of operaciones">{{item.nombre}}</ion-select-option>
+                                        </ion-select>
                                     </ion-item>
                                 </ion-col>
                             </ion-row>
 
                             <ion-row>
                                 <ion-col>
-                                    <ion-item>
+                                    <!-- <ion-item>
                                         <ion-label position="floating" class="ion-text-center"> Fecha del tratamiento
                                         </ion-label>
                                         <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="tratamiento.fecha">
                                         </ion-datetime>
-                                    </ion-item>
+                                    </ion-item> -->
                                 </ion-col>
                             </ion-row>
 
@@ -71,7 +108,7 @@
                                     <ion-item>
                                         <ion-label position="floating" class="ion-text-center"> Descripción
                                         </ion-label>
-                                        <ion-textarea rows="6" cols="20" placeholder="Póngale"></ion-textarea>
+                                        <ion-textarea rows="6" cols="20" placeholder="Póngale" [(ngModel)]="nuevoTratamiento.descripcion"></ion-textarea>
                                     </ion-item>
                                 </ion-col>
                             </ion-row>
@@ -83,7 +120,8 @@
                                 </ion-col>
 
                                 <ion-col>
-                                    <ion-button expand="block" color="secondary" (click)="ingresarTratamiento ()">Finalizar
+                                    <ion-button expand="block" color="secondary" (click)="ingresarTratamiento()">
+                                        Finalizar
                                     </ion-button>
                                 </ion-col>
 

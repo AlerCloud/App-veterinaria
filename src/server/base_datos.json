@@ -42,60 +42,84 @@
       "id": 5
     }
   ],
-  "tratamiento":[],
-  "vacunas":[
+  "tratamiento": [
     {
-      "nombre":"moquillo canino"
+      "nombre": "Esplenectomía",
+      "descripcion": "sadasdadas",
+      "tipoTratamiento": "Operación",
+      "fecha": "2021-11-27T06:42:57.969Z",
+      "idMascota": 0,
+      "id": 1
     },
     {
-      "nombre":"parvovirosis"
+      "nombre": "Esplenectomía",
+      "descripcion": "asdsadasdasd",
+      "tipoTratamiento": "Operación",
+      "fecha": "2021-11-27T14:26:44.542Z",
+      "idMascota": 0,
+      "id": 2
     },
     {
-      "nombre":"leptospirosis"
-    },
-    {
-      "nombre":"rabia"
-    },
-    {
-      "nombre":"hepatitis infecciosa"
+      "nombre": "Invermic",
+      "descripcion": "hghjg",
+      "tipoTratamiento": "Desparasitante",
+      "fecha": "2021-11-27T14:58:06.765Z",
+      "idMascota": 3,
+      "id": 3
     }
   ],
-  "desparacitaciones":[
+  "vacunas": [
     {
-      "nombre":"Ehliquantel"
+      "nombre": "moquillo canino"
     },
     {
-      "nombre":"Vetnil - Glicopan Pet"
+      "nombre": "parvovirosis"
     },
     {
-      "nombre":"Drag Pharma"
+      "nombre": "leptospirosis"
     },
     {
-      "nombre":"Invermic"
+      "nombre": "rabia"
     },
     {
-      "nombre":"Mebermic"
+      "nombre": "hepatitis infecciosa"
     }
   ],
-
-  "operaciones":[
+  "desparacitaciones": [
     {
-      "nombre":"Ovariohisterectomia"
+      "nombre": "Ehliquantel"
     },
     {
-      "nombre":"Caudotomías"
+      "nombre": "Vetnil - Glicopan Pet"
     },
     {
-      "nombre":"Destartraje con Ultrasonido"
+      "nombre": "Drag Pharma"
     },
     {
-      "nombre":"Esplenectomía"
+      "nombre": "Invermic"
     },
     {
-      "nombre":"Otohematomas"
+      "nombre": "Mebermic"
+    }
+  ],
+  "operaciones": [
+    {
+      "nombre": "Ovariohisterectomia"
     },
     {
-      "nombre":"Orquiectomía u Orquidectomía"
+      "nombre": "Caudotomías"
     },
+    {
+      "nombre": "Destartraje con Ultrasonido"
+    },
+    {
+      "nombre": "Esplenectomía"
+    },
+    {
+      "nombre": "Otohematomas"
+    },
+    {
+      "nombre": "Orquiectomía u Orquidectomía"
+    }
   ]
 }

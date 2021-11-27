@@ -40,7 +40,7 @@ const routes: Routes = [
 
   },
   {
-    path: 'verDesparacitaciones',
+    path: 'verDesparacitaciones/:id',
     component: VerDesparacitacionesComponent
 
   },

@@ -6,18 +6,18 @@
       <ion-col>
         <div class="contenido">
           <ion-list lines=none>
-            <ion-item>
+            <ion-item *ngFor="let item of tratamientos|tratamiento:idMascota:'Desparasitante'">
+              <section>
+                <article>{{item.nombre}}</article>
+                <article>{{item.fecha}}</article>
+              </section>
+            </ion-item>
+            <!-- <ion-item>
               <section>
                 <article>texto</article>
                 <article>fecha</article>
               </section>
-            </ion-item>
-            <ion-item>
-              <section>
-                <article>texto</article>
-                <article>fecha</article>
-              </section>
-            </ion-item>
+            </ion-item> -->
           </ion-list>
         </div>
       </ion-col>

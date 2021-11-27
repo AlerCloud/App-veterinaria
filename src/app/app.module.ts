@@ -16,6 +16,10 @@ import { HeaderComponent } from './componentes/header/header.component';
 import { MascotaService } from './services/mascota.service';
 import { MascotasComponent } from './mascotas/mascotas.component';
 import { VerDesparacitacionesComponent } from './ver-desparacitaciones/ver-desparacitaciones.component';
+import { TratamientoService } from './services/Tratamiento.service';
+import { CommonModule } from '@angular/common';
+import { TratamientoComponent } from './tratamiento/tratamiento.component';
+import { TratamientoPipe } from './pipes/tratamiento.pipe';
 
 @NgModule({
   declarations: [
@@ -28,11 +32,13 @@ import { VerDesparacitacionesComponent } from './ver-desparacitaciones/ver-despa
     VerFichaComponent,
     HeaderComponent,
     MascotasComponent,
-    VerDesparacitacionesComponent
+    VerDesparacitacionesComponent,
+    TratamientoComponent,
+    TratamientoPipe
   ],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule, ReactiveFormsModule, HttpClientModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, MascotaService],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule, ReactiveFormsModule, HttpClientModule, CommonModule],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, MascotaService, TratamientoService],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

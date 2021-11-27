@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ITratamiento } from 'src/interfaces/ITratamiento';
+import { TratamientoService } from '../services/Tratamiento.service';
 
 @Component({
   selector: 'app-ver-desparacitaciones',
@@ -7,8 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VerDesparacitacionesComponent implements OnInit {
 
-  constructor() { }
+  public tratamientos:Array<ITratamiento> = []
+  public idMascota:number = 0;
 
-  ngOnInit() {}
+
+  constructor(private servicio:TratamientoService, private parametroUrl:ActivatedRoute) { }
+
+  ngOnInit() {
+    this.servicio.traerTratamientos().subscribe(data => {this.tratamientos = data})
+    this.idMascota = parseInt(this.parametroUrl.snapshot.paramMap.get("id"))
+  }
 
 }
